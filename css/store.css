@@ -1,0 +1,208 @@
+.wrapper {
+    width: 100%;
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    font-size: 0;
+    position: relative;
+}
+
+.map img {
+    width: 100%;
+}
+
+.storelist {
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    width: 20%;
+    z-index: 2;
+}
+
+.storelist p {
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.storelist ul {
+    width: 100%;
+    padding-top: 4%;
+}
+
+.storelist ul li {
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 200%;
+    cursor: pointer;
+}
+
+.storelist ul li p {
+    font-size: 16px;
+}
+
+.storelist ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.storelist ul li:hover {
+    color: white;
+}
+
+.tagArea {
+    width: 28.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.tag {
+    width: 6%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.tagimg {
+    width: 100%;
+    position: relative;
+}
+
+.tagimg img {
+    width: 100%;
+}
+
+.circleArea {
+    width: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.circle {
+    position: relative;
+    width: 34px;
+    height: 40px;
+    background-color: rgb(0, 255, 255, .3);
+    border-radius: 50%;
+    transform: rotateX(70deg);
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 34px;
+    height: 39px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 0 rgb(255, 0, 0, .3);
+    z-index: -1;
+    opacity: 0;
+    animation: shine 2s ease-in-out infinite;
+}
+
+.tagTxt {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.tagTxt .content {
+    background-color: #fff;
+    vertical-align: middle;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.tagTxt .content h1 {
+    font-size: 18px;
+    color: #000;
+}
+
+.tagTxt .content p {
+    font-size: 16px;
+    color: #000;
+    line-height: 150%;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.tagTxt .content a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.tagTxt .trangle {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-right: 0px solid #fff;
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+}
+
+#Taipei {
+    top: 3%;
+    left: 32.7%;
+}
+
+#Taoyuan {
+    top: 5%;
+    left: 28%;
+}
+
+#Taichung {
+    top: 26%;
+    left: 21%;
+}
+
+#Tainan {
+    top: 58%;
+    left: 16%;
+}
+
+#Kaohsiung {
+    top: 63%;
+    left: 20%;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

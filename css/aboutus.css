@@ -1,0 +1,34 @@
+.wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 2% auto;
+    border: 2px solid #0d6087bb;
+    padding: 2%;
+}
+
+h1 {
+    font-size: 20px;
+    color: #000;
+    width: 100%;
+    border-left: 2px solid #0d6087bb;
+    letter-spacing: 1px;
+    padding-left: 2%;
+    margin: 2% 0%;
+    line-height: 100%;
+}
+
+p {
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    letter-spacing: 1px;
+    padding: 1% 0%;
+}
