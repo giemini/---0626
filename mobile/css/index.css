@@ -1,0 +1,159 @@
+.wrapper {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    padding-top: 2%;
+}
+
+.swiper01 {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.dashline {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2% 0%;
+}
+
+.dashtext {
+    font-size: 25px;
+    color: #000;
+    vertical-align: middle;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    vertical-align: middle;
+}
+
+.commodityArea {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+    display: flex;
+}
+
+.commodityCard {
+    width: 25%;
+    margin: 0% 0.5%;
+}
+
+.commodityimg {
+    width: 100%;
+    position: relative;
+}
+
+.commodityimg img {
+    width: 100%;
+}
+
+.mask {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.mask .more {
+    width: 24px;
+}
+
+.mask .more img {
+    width: 100%;
+}
+
+.commodityimg:hover .mask {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+.commoditytext {
+    width: 100%;
+}
+
+.commoditytext .textleft,
+.commoditytext .textright {
+    display: inline-block;
+    width: 50%;
+}
+
+.commoditytext .textleft p {
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    padding: 1% 0%;
+}
+
+.commoditytext .textright {
+    text-align: center;
+}
+
+.commoditytext .textright button {
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #0D6187;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    padding: 1% 0%;
+}
+
+.commoditytext .textright button:hover {
+    background: #0D6187;
+    color: #fff;
+}
+
+.buyNow {
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width:415px) {
+    .swiper01 {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .commodityArea {
+        flex-direction: column;
+    }
+    .commodityCard {
+        width: 100%;
+        margin: 0%;
+    }
+    .commoditytext {
+        padding: 2% 0% 4% 0%;
+    }
+    .commoditytext .textright {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .commoditytext .textleft p {
+        font-size: 14px;
+    }
+    .commoditytext .textright button {
+        font-size: 14px;
+    }
+}
