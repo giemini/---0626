@@ -32,3 +32,9 @@
     letter-spacing: 1px;
     padding: 1% 0%;
 }
+
+@media screen and (max-width:415px) {
+    .container {
+        margin: 22% auto;
+    }
+}

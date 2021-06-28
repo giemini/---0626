@@ -150,3 +150,25 @@
 .Featureimg img {
     width: 100%;
 }
+
+@media screen and (max-width:415px) {
+    .product {
+        flex-direction: column;
+    }
+    .productpic {
+        width: 100%;
+    }
+    .productTxt {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .productTxt .buttonArea {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .productTxt .heart {
+        width: 140px;
+    }
+}
