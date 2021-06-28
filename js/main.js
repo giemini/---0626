@@ -15,12 +15,19 @@ $(function() {
     })
 })
 $(function() {
+    $(".loadheader .humber").click(function() {
+        $(this).children(".humberline").toggleClass("action");
+        $(".mobilenavbar").toggleClass("apear");
+    });
+    $(".subtn").on("click", function() {
+        $(".sub").stop().slideUp(600);
+        $(this).children(".sub").stop().slideToggle(600);
+    });
     $(".fruit").mouseover(() => {
         $("#fruit").css("display", "block")
         $("#vegitable").css("display", "none")
         $("#seafood").css("display", "none")
     });
-
     $(".vegitable").mouseover(() => {
         $("#fruit").css("display", "none")
         $("#vegitable").css("display", "block")
