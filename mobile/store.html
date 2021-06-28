@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>宅購物</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/store.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js' integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==' crossorigin='anonymous'></script>
+    <script src="js/main.js"></script>
+    <script src="js/store.js"></script>
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <script>
+        $(function() {
+            if (device.desktop()) {
+                //
+            } else {
+                document.location.href = "mobile/store.html";
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="loadheader">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+            </div>
+            <ul class="navbar">
+                <li class="nav" id="nav1">
+                    <a href="information.html">
+                        活動資訊
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">
+                        商品分類
+                    </a>
+                    <div class="dropbox" id="drop2">
+                        <div class="newsArea">
+                            <ul class="news">
+                                <li class="fruit">
+                                    <a href="#">水果專區</a>
+                                </li>
+                                <li class="vegitable">
+                                    <a href="#">蔬菜專區</a>
+                                </li>
+                                <li class="seafood">
+                                    <a href="#">海鮮專區</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="fruit">
+                                <li>
+                                    <a href="product.html">蘋果</a>
+                                </li>
+                                <li>
+                                    <a href="product2.html">西瓜</a>
+                                </li>
+                                <li>
+                                    <a href="product3.html">芒果</a>
+                                </li>
+                                <li>
+                                    <a href="product4.html">火龍果</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="vegitable">
+                                <li>
+                                    <a href="product2-1.html">紅蘿蔔</a>
+                                </li>
+                                <li>
+                                    <a href="product2-2.html">馬鈴薯</a>
+                                </li>
+                                <li>
+                                    <a href="product2-3.html">洋蔥</a>
+                                </li>
+                                <li>
+                                    <a href="product2-4.html">杏鮑菇</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="seafood">
+                                <li>
+                                    <a href="product3-1.html">鮭魚</a>
+                                </li>
+                                <li>
+                                    <a href="product3-2.html">透抽</a>
+                                </li>
+                                <li>
+                                    <a href="product3-3.html">白蝦</a>
+                                </li>
+                                <li>
+                                    <a href="product3-4.html">牡蠣</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav">
+                    <a href="aboutus.html">
+                        關於我們
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="store.html">
+                        門市查詢
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="scrolltop">
+        <div class="arrow"></div>
+        <div class="scrolltext">
+            TOP
+        </div>
+    </div>
+    <section class="wrapper">
+        <div class="storelist">
+            <p>
+                門市查詢
+            </p>
+            <ul>
+                <li class="TaipeiLink">
+                    台北門市
+                    <p>
+                        門市電話:<a href="tel:+886212345678">02-12345678</a>
+                    </p>
+                </li>
+                <li class="TaoyuanLink">
+                    桃園門市
+                    <p>
+                        門市電話:<a href="tel:+88631234567">03-1234567</a>
+                    </p>
+                </li>
+                <li class="TaichungLink">
+                    台中門市
+                    <p>
+                        門市電話:<a href="tel:+8864123456789">04123456789</a>
+                    </p>
+                </li>
+                <li class="TainanLink">
+                    台南門市
+                    <p>
+                        門市電話:<a href="tel:+886612345678">06-12345678</a>
+                    </p>
+                </li>
+                <li class="KaohsiungLink">
+                    高雄門市
+                    <p>
+                        門市電話:<a href="tel:+88612345678">06-12345678</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="map">
+            <img src="images/map.jpg" alt="">
+            <div class="tagArea" id="Taipei">
+                <div class="tagTxt">
+                    <div class="content">
+                        <h1>台北店</h1>
+                        <p>
+                            地址:台北市忠孝東路1號
+                        </p>
+
+                        <p>
+                            營業時間: 10:00 AM ~ 10:00 PM
+                        </p>
+                    </div>
+                    <div class="trangle"></div>
+                </div>
+                <div class="tag">
+                    <div class="tagimg">
+                        <img src="images/unnamed.png" alt="" />
+                        <div class="circleArea">
+                            <div class="circle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tagArea" id="Taoyuan">
+                <div class="tagTxt">
+                    <div class="content">
+                        <h1>桃園店</h1>
+                        <p>
+                            地址:桃園市中豐路1號
+                        </p>
+
+                        <p>
+                            營業時間: 10:00 AM ~ 10:00 PM
+                        </p>
+                    </div>
+                    <div class="trangle"></div>
+                </div>
+                <div class="tag">
+                    <div class="tagimg">
+                        <img src="images/unnamed.png" alt="" />
+                        <div class="circleArea">
+                            <div class="circle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tagArea" id="Taichung">
+                <div class="tagTxt">
+                    <div class="content">
+                        <h1>台中店</h1>
+                        <p>
+                            地址:台中市市政北路1號
+                        </p>
+
+                        <p>
+                            營業時間: 10:00 AM ~ 10:00 PM
+                        </p>
+                    </div>
+                    <div class="trangle"></div>
+                </div>
+                <div class="tag">
+                    <div class="tagimg">
+                        <img src="images/unnamed.png" alt="" />
+                        <div class="circleArea">
+                            <div class="circle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tagArea" id="Tainan">
+                <div class="tagTxt">
+                    <div class="content">
+                        <h1>台南店</h1>
+                        <p>
+                            地址:台南市中華路1號
+                        </p>
+
+                        <p>
+                            營業時間: 10:00 AM ~ 10:00 PM
+                        </p>
+                    </div>
+                    <div class="trangle"></div>
+                </div>
+                <div class="tag">
+                    <div class="tagimg">
+                        <img src="images/unnamed.png" alt="" />
+                        <div class="circleArea">
+                            <div class="circle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tagArea" id="Kaohsiung">
+                <div class="tagTxt">
+                    <div class="content">
+                        <h1>高雄店</h1>
+                        <p>
+                            地址:高雄市民生路1號
+                        </p>
+
+                        <p>
+                            營業時間: 10:00 AM ~ 10:00 PM
+                        </p>
+                    </div>
+                    <div class="trangle"></div>
+                </div>
+                <div class="tag">
+                    <div class="tagimg">
+                        <img src="images/unnamed.png" alt="" />
+                        <div class="circleArea">
+                            <div class="circle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy;copyright
+        </p>
+    </footer>
+</body>
+
+</html>

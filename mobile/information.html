@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>宅購物</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/information.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' integrity='sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <script>
+        $(function() {
+            if (device.desktop()) {
+                //
+            } else {
+                document.location.href = "mobile/information.html";
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="loadheader">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+            </div>
+            <ul class="navbar">
+                <li class="nav" id="nav1">
+                    <a href="information.html">
+                        活動資訊
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">
+                        商品分類
+                    </a>
+                    <div class="dropbox" id="drop2">
+                        <div class="newsArea">
+                            <ul class="news">
+                                <li class="fruit">
+                                    <a href="#">水果專區</a>
+                                </li>
+                                <li class="vegitable">
+                                    <a href="#">蔬菜專區</a>
+                                </li>
+                                <li class="seafood">
+                                    <a href="#">海鮮專區</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="fruit">
+                                <li>
+                                    <a href="product.html">蘋果</a>
+                                </li>
+                                <li>
+                                    <a href="product2.html">西瓜</a>
+                                </li>
+                                <li>
+                                    <a href="product3.html">芒果</a>
+                                </li>
+                                <li>
+                                    <a href="product4.html">火龍果</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="vegitable">
+                                <li>
+                                    <a href="product2-1.html">紅蘿蔔</a>
+                                </li>
+                                <li>
+                                    <a href="product2-2.html">馬鈴薯</a>
+                                </li>
+                                <li>
+                                    <a href="product2-3.html">洋蔥</a>
+                                </li>
+                                <li>
+                                    <a href="product2-4.html">杏鮑菇</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="seafood">
+                                <li>
+                                    <a href="product3-1.html">鮭魚</a>
+                                </li>
+                                <li>
+                                    <a href="product3-2.html">透抽</a>
+                                </li>
+                                <li>
+                                    <a href="product3-3.html">白蝦</a>
+                                </li>
+                                <li>
+                                    <a href="product3-4.html">牡蠣</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav">
+                    <a href="aboutus.html">
+                        關於我們
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="store.html">
+                        門市查詢
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="scrolltop">
+        <div class="arrow"></div>
+        <div class="scrolltext">
+            TOP
+        </div>
+    </div>
+    <section class="wrapper">
+        <div class="banner">
+            <img src="images/information.jpg" alt="" />
+        </div>
+        <div class="container">
+            <div class="newlist">
+                <ul class="list">
+                    <li class="newLink" id="storelink">
+                        優惠活動
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="newArea" id="store">
+                <div class="newsCard">
+                    <div class="Date">
+                        <p>2020/06/16</p>
+                        <p>PM20:30</p>
+                    </div>
+                    <div class="newsPic">
+                        <img src="images/news03.jpg" alt="" />
+                    </div>
+                    <div class="newsTxt">
+                        <h1>夏季系列商品85折</h1>
+                        <p>
+                            熱浪來襲，宅購物貼心準備許多夏季商品，你想得到的宅購物都有，讓我們一起舒舒服服地度過這酷熱的夏天。
+                        </p>
+                    </div>
+                </div>
+                <div class="newsCard">
+                    <div class="Date">
+                        <p>2020/06/15</p>
+                        <p>PM14:30</p>
+                    </div>
+                    <div class="newsPic">
+                        <img src="images/news01.jpg" alt="" />
+                    </div>
+                    <div class="newsTxt">
+                        <h1>會員購買商品享5折優惠</h1>
+                        <p>
+                            寵愛會員活動來囉~會員一律享有商品5折優惠。
+                        </p>
+                    </div>
+                </div>
+                <div class="newsCard">
+                    <div class="Date">
+                        <p>2020/06/13</p>
+                        <p>PM21:30</p>
+                    </div>
+                    <div class="newsPic">
+                        <img src="images/news02.jpg" alt="" />
+                    </div>
+                    <div class="newsTxt">
+                        <h1>網購商品滿2000元，免運費</h1>
+                        <p>
+                            疫情嚴峻，即日起網購滿2000元，免運費，讓你在家待得安心，買得開心。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy;copyright
+        </p>
+    </footer>
+</body>
+
+</html>

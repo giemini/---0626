@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>宅購物</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' integrity='sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <script>
+        $(function() {
+            if (device.desktop()) {
+                //
+            } else {
+                document.location.href = "mobile/index.html";
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="loadheader">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+            </div>
+            <ul class="navbar">
+                <li class="nav" id="nav1">
+                    <a href="information.html">
+                        活動資訊
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="#">
+                        商品分類
+                    </a>
+                    <div class="dropbox" id="drop2">
+                        <div class="newsArea">
+                            <ul class="news">
+                                <li class="fruit">
+                                    <a href="#">水果專區</a>
+                                </li>
+                                <li class="vegitable">
+                                    <a href="#">蔬菜專區</a>
+                                </li>
+                                <li class="seafood">
+                                    <a href="#">海鮮專區</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="fruit">
+                                <li>
+                                    <a href="product.html">蘋果</a>
+                                </li>
+                                <li>
+                                    <a href="product2.html">西瓜</a>
+                                </li>
+                                <li>
+                                    <a href="product3.html">芒果</a>
+                                </li>
+                                <li>
+                                    <a href="product4.html">火龍果</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="vegitable">
+                                <li>
+                                    <a href="product2-1.html">紅蘿蔔</a>
+                                </li>
+                                <li>
+                                    <a href="product2-2.html">馬鈴薯</a>
+                                </li>
+                                <li>
+                                    <a href="product2-3.html">洋蔥</a>
+                                </li>
+                                <li>
+                                    <a href="product2-4.html">杏鮑菇</a>
+                                </li>
+                            </ul>
+                            <ul class="subnews" id="seafood">
+                                <li>
+                                    <a href="product3-1.html">鮭魚</a>
+                                </li>
+                                <li>
+                                    <a href="product3-2.html">透抽</a>
+                                </li>
+                                <li>
+                                    <a href="product3-3.html">白蝦</a>
+                                </li>
+                                <li>
+                                    <a href="product3-4.html">牡蠣</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav">
+                    <a href="aboutus.html">
+                        關於我們
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="store.html">
+                        門市查詢
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="scrolltop">
+        <div class="arrow"></div>
+        <div class="scrolltext">
+            TOP
+        </div>
+    </div>
+    <section class="wrapper">
+        <div class="banner">
+            <div class="swiper-container swiper01">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/swiper01.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/swiper02.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/swiper03.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <script>
+                var swiper = new Swiper(".swiper01", {
+                    initialSlide: 0,
+                    observer: true, //修改swiper自己或子元素时，自动初始化swiper
+                    observeParents: true, //修改swiper的父元素时，自动初始化swiper
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </div>
+        <div class="dashline">
+            <div class="dashtext">
+                水果專區
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div class="commodityArea">
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity01.jpg" alt="" />
+                        <a href="product.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>蘋果</p>
+                            <p>產地冷藏直送的蘋果</p>
+                            <p>NT200</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity02.jpg" alt="" />
+                        <a href="product2.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>西瓜</p>
+                            <p>產地冷藏直送的西瓜</p>
+                            <p>NT900</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity03.jpg" alt="" />
+                        <a href="product3.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>芒果</p>
+                            <p>產地冷藏直送的芒果</p>
+                            <p>NT600</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity04.jpg" alt="" />
+                        <a href="product4.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>火龍果</p>
+                            <p>產地冷藏直送的火龍果</p>
+                            <p>NT500</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashline">
+            <div class="dashtext">
+                蔬菜專區
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div class="commodityArea">
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity02-1.jpg" alt="" />
+                        <a href="product2-1.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>紅蘿蔔</p>
+                            <p>產地直送的有機紅蘿蔔</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity02-2.jpg" alt="" />
+                        <a href="product2-2.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>馬鈴薯</p>
+                            <p>產地直送的有機馬鈴薯</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity02-3.jpg" alt="" />
+                        <a href="product2-3.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>洋蔥</p>
+                            <p>產地直送的有機洋蔥</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity02-4.jpg" alt="" />
+                        <a href="product2-4.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>杏鮑菇</p>
+                            <p>產地直送的有機杏鮑菇</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashline">
+            <div class="dashtext">
+                海鮮專區
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div class="commodityArea">
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity03-1.jpg" alt="" />
+                        <a href="product3-1.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>鮭魚</p>
+                            <p>當日現撈鮭魚</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity03-2.jpg" alt="" />
+                        <a href="product3-2.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>透抽</p>
+                            <p>新鮮現釣的透抽</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity03-3.jpg" alt="" />
+                        <a href="product3-3.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>白蝦</p>
+                            <p>養殖場現撈的白蝦</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commodityCard">
+                    <div class="commodityimg">
+                        <img src="images/commodity03-4.jpg" alt="" />
+                        <a href="product3-4.html">
+                            <div class="mask">
+                                <div class="more">
+                                    <img src="images/search.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="commoditytext">
+                        <div class="textleft">
+                            <p>牡蠣</p>
+                            <p>新鮮又大顆的牡蠣</p>
+                            <p>NT1000</p>
+                        </div>
+                        <div class="textright">
+                            <div class="buyNow">
+                                <button>立即購買</button>
+                            </div>
+                            <div class="incar">
+                                <button>購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy;copyright
+        </p>
+    </footer>
+</body>
+
+</html>
