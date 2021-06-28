@@ -13,16 +13,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' integrity='sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==' crossorigin='anonymous'></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
-    <script>
-        $(function() {
-            if (device.desktop()) {
-                //
-            } else {
-                document.location.href = "mobile/product4.html";
-            }
-        })
-    </script>
     <script>
         $(function() {
             $(".heart").mouseover(() => {
@@ -122,6 +112,84 @@
                     </a>
                 </li>
             </ul>
+            <ul class="mobilenavbar">
+                <li class="nav" id="nav1">
+                    <a href="information.html">
+                        活動資訊
+                    </a>
+                </li>
+                <li class="nav">
+                    <a>
+                        商品分類
+                    </a>
+                    <ul class="news">
+                        <li class="fruit subtn">
+                            <a>水果專區</a>
+                            <div class="sub">
+                                <div>
+                                    <a href="product.html">蘋果</a>
+                                </div>
+                                <div>
+                                    <a href="product2.html">西瓜</a>
+                                </div>
+                                <div>
+                                    <a href="product3.html">芒果</a>
+                                </div>
+                                <div>
+                                    <a href="product4.html">火龍果</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="vegitable subtn">
+                            <a>蔬菜專區</a>
+                            <div class="sub">
+                                <div>
+                                    <a href="product2-1.html">紅蘿蔔</a>
+                                </div>
+                                <div>
+                                    <a href="product2-2.html">馬鈴薯</a>
+                                </div>
+                                <div>
+                                    <a href="product2-3.html">洋蔥</a>
+                                </div>
+                                <div>
+                                    <a href="product2-4.html">杏鮑菇</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="seafood subtn">
+                            <a>海鮮專區</a>
+                            <div class="sub">
+                                <div>
+                                    <a href="product3-1.html">鮭魚</a>
+                                </div>
+                                <div>
+                                    <a href="product3-2.html">透抽</a>
+                                </div>
+                                <div>
+                                    <a href="product3-3.html">白蝦</a>
+                                </div>
+                                <div>
+                                    <a href="product3-4.html">牡蠣</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav">
+                    <a href="aboutus.html">
+                        關於我們
+                    </a>
+                </li>
+                <li class="nav">
+                    <a href="store.html">
+                        門市查詢
+                    </a>
+                </li>
+            </ul>
+            <div class="humber">
+                <div class="humberline"></div>
+            </div>
         </div>
 
     </header>
