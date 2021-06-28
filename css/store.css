@@ -191,6 +191,11 @@
     left: 20%;
 }
 
+.mobilemap {
+    width: 100%;
+    display: none;
+}
+
 @keyframes shine {
     0% {
         opacity: 0;
@@ -207,12 +212,15 @@
     }
 }
 
-@media screen and(max-width:415px) {
+@media screen and (max-width:415px) {
     .storelist {
         display: none;
     }
     .map {
         display: none;
+    }
+    .mobilemap {
+        display: block;
     }
     .dashline {
         max-width: 90%;
