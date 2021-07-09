@@ -7,6 +7,7 @@
 
 .container {
     width: 100%;
+    height: 70vh;
     max-width: 90%;
     margin: 6% auto;
     border: 2px solid #0d6087bb;
