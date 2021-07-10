@@ -122,10 +122,11 @@
 .tagTxt {
     width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     opacity: 0;
     transition: opacity .5s ease-in-out;
+    padding-right: 3%;
 }
 
 .tagTxt .content {
