@@ -129,6 +129,22 @@
     margin-bottom: 1%;
 }
 
+@media screen and (max-width:1024px) {
+    .commodityArea {
+        flex-direction: column;
+    }
+    .commodityCard {
+        width: 100%;
+        margin: 0%;
+    }
+    .commoditytext {
+        padding: 2% 0% 4% 0%;
+    }
+    .commoditytext .textright {
+        text-align: right;
+    }
+}
+
 @media screen and (max-width:415px) {
     .swiper01 {
         max-width: 100%;

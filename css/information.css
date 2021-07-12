@@ -124,6 +124,27 @@
     letter-spacing: 2px;
 }
 
+@media screen and (max-width:1024px) {
+    .wrapper {
+        margin-top: 80px;
+    }
+    .newsCard {
+        flex-direction: column;
+        margin-bottom: 4%;
+    }
+    .Date {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .newsPic {
+        width: 100%;
+    }
+    .newsTxt {
+        width: 100%;
+        padding-left: 0%;
+    }
+}
+
 @media screen and (max-width:415px) {
     .wrapper {
         margin-top: 80px;
